@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تخصص السيارات بمدرسة الدلنجات الصناعية بنين</title>
+    <link href="templatemo-3d-coverflow.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="#home" class="logo-container">
+            <div class="logo">
+                <svg >
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="10" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(-15 17.5 50)" />
+                    <rect x="35" y="15" width="15" height="70" fill="url(#grad1)" />
+                    <rect x="60" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(15 67.5 50)" />
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.5" />
+                </svg>
+            </div>
+
+
+        
+        <nav class="main-menu" id="mainMenu">
+            <a href="index.html" class="menu-item active">الصفحة الرئيسية</a>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="coverflow-wrapper">
+            <div class="info">
+                <h2 id="current-title">موقعى</h2>
+                <p id="current-description">زملائى</p>
+            </div>
+
+            <div class="coverflow-container" tabindex="0">
+                <div class="coverflow" id="coverflow">
+                    <div class="coverflow-item" data-index="0">
+                        <div class="cover image-loading">
+                            <img src="images/15.jpg" alt="عبدالفتاح" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="1">
+                        <div class="cover image-loading">
+                            <img src="images/12.jpg" alt="عبدالعاطى عيد" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="2">
+                        <div class="cover image-loading">
+                            <img src="images/18.jpg" alt="مهندس حسن عبدالشافى" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="3">
+                        <div class="cover image-loading">
+                            <img src="images/10.jpg" alt="المصمم" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="4">
+                        <div class="cover image-loading">
+                            <img src="images/02.jpg" alt="مهندس زغلول البقلى" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index1="5">
+                        <div class="cover image-loading">
+                            <img src="images/14.jpg" alt="السيد فتحى" loading="lazy">
+							 <img src="images/01.jpg" alt="اللهم امين" loading="lazy">
+							  <img src="images/0.jpg" alt="صل الله عليه وسلم" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="6">
+                        <div class="cover image-loading">
+                            <img src="images/10.jpg" alt="المصمم" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                </div>
+
+                <button class="nav-button prev" onclick="navigate(-1)">‹</button>
+                <button class="nav-button next" onclick="navigate(1)">›</button>
+
+                <div class="dots-container" id="dots"></div>
+                
+                <!-- Play/Pause Button -->
+                <button class="play-pause-button" id="playPauseBtn" onclick="toggleAutoplay()">
+                    <span class="play-icon">▶</span>
+                    <span class="pause-icon" style="display: none;">❚❚</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="about-content">
+            <div class="about-header">
+                <h2>Discover 3D Coverflow</h2>
+                <p>A revolutionary way to showcase your visual content with stunning 3D effects and seamless interactions</p>
+            </div>
+     
+
+<script src="templatemo-3d-coverflow-scripts.js"></script>
+
+</body>
+</html>

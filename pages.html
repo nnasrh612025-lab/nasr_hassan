@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>عرض ملفات  - تخصص السيارات</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      direction: rtl;
+      text-align: center;
+      background-color: #f0f8ff;
+    }
+
+    select {
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>اختر كتابًا لعرضه</h2>
+
+  <select id="pdfSelector" onchange="loadPDF()">
+    <option value="test1.pdf">Test1* امتحان تجريبى معارف وعملى اسئلة فقط</option>
+	<option value="test2.pdf">Test2* امتحان عملى فقط</option>
+	<option value="test3.pdf">Test3* امتحانات للعمال والخدمات</option> 
+
+  </select>
+
+  <iframe id="pdfViewer" src=""></iframe>
+ <script>
+    function loadPDF() {
+      const viewer = document.getElementById("pdfViewer");
+      const file = document.getElementById("pdfSelector").value;
+      viewer.src = file;
+    }
+  </script>
+<script src="js/earnings.js"></script>
+</body>
+</html>
+```
+
+ملحوظة مهمة:
+- تأكد إن أسماء الملفات داخل مجلد pdf مكتوبة بنفس الطريقة بالضبط، وبالأخص المسافات.
+
+لو تحب نضيف زر تحميل أو صورة خلفية أو شعار للموقع، بلغني أكملها لك
